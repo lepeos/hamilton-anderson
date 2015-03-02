@@ -1,0 +1,533 @@
+html, body{
+
+	height: 100%;
+	width: 100%;
+	margin: 0;
+}
+
+
+
+
+@font-face {
+
+	font-family: 'icomoon';
+	src:url('../fonts/icomoon.eot');
+	src:url('../fonts/icomoon.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/icomoon.woff') format('woff'),
+		url('../fonts/icomoon.ttf') format('truetype'),
+		url('../fonts/icomoon.svg#icomoon') format('svg')
+
+}
+
+@font-face {
+
+	font-family:'Bank Gothic';
+
+	src: url('../fonts/bankgthd.ttf') format('truetype');	
+
+}
+
+.peos a {
+	text-decoration: none;
+	color: #222;
+	font-family: Helvetica;
+	font-size: 0.5em;
+	margin-right: auto;
+	position: relative;
+
+}
+
+.peos_full a {
+	display: none;
+}
+
+
+
+/*PHONES*/
+
+
+#background {
+
+height: 45%;
+width: 100%;	
+margin: 0;
+text-align: center;
+background-image: url('../images/background.JPG');
+background-repeat: no-repeat;
+background-size: cover;
+
+
+display: inline-block;
+
+
+
+}
+
+	#logo_wrapper{
+
+	margin: auto;
+	width: 50%;
+	height: 100%;
+	margin-top: 12%;
+	
+	}
+
+	#logo {
+
+	width: 100%;
+
+
+	}
+	/*
+	*TESTING FOR PEOS WRAPPER
+	*/
+
+.fixed_logo {
+	position: fixed;
+	width: 100%;
+	height: 7%;
+	background-color: #565656;
+	overflow: scroll:;
+	font-size: 0.5em;
+}
+
+	/*
+	* END TESTING FOR PEOS WRAPPER
+	*/
+
+/*Main text*/
+
+	/*who*/
+
+#spiel {
+
+	height: 190%;
+	clear: both;
+	overflow: scroll; 
+	font-family: 'Muli', serif;
+	color: #444;
+
+}
+
+
+#main_title_who {
+
+	text-align: center;
+	font-family: 'Muli', 'Volkhov', serif;
+}
+
+
+#main_who {
+
+	margin: 5% 10%;
+	line-height: 1.5;
+	letter-spacing: 0.01em;
+	font-size: 0.9em;
+
+
+}
+
+	/*what*/
+
+#main_title_what {
+	text-align: center;
+	font-family: 'Muli', 'Volkhov', serif;
+}
+
+#sub_title_what{
+
+	display: none;
+	font-family: 'Muli', 'Volkhov', serif;
+}
+
+
+#main_what {
+	margin: 5% 10%;
+	line-height: 1.5;
+	letter-spacing: 0.01em;
+	padding-bottom: 10%;
+	font-size: 0.9em;
+}
+
+#main_what ul li {
+	text-align: left;
+	margin-left: -7%;
+}
+
+#main_what p {
+	margin-left: 4%;
+	text-align: justify;	
+}
+
+
+
+
+
+/*FOOTER*/
+#footer {
+
+
+
+	width: 100%;
+	position: fixed;
+	top: 87%;
+	height: 10%;
+	background-color: #FFF;
+}
+
+#footer ul {
+	padding: 0;
+}
+
+
+
+#footer ul li {
+	display: inline-block;
+
+	width: 28%;
+
+	font-family: 'icomoon';
+
+	font-size: 2.2em;
+	position: relative;
+
+}
+
+
+
+
+
+#twitter:before {
+    content: '\e60b';
+    font-family: 'icomoon';
+    speak: none;
+    color: #4099FF;
+}
+
+#phone:before {
+    content: '\e600';
+    font-family: 'icomoon';
+    speak: none;
+    color: #59983B;
+}
+
+/*Leaving this in case you change mind about FB*/
+/*#facebook:before {
+    content: '\e608';
+    font-family: 'icomoon';
+    speak: none;
+    color: #3B5998;
+}*/
+#email:before {
+    content: '\e602';
+    font-family: 'icomoon';
+    speak: none;
+    color: #333;
+
+}
+
+
+/*/*
+ *PHABLETS
+ */
+
+@media only screen and (min-width: 568px){
+
+	#background {
+		height: 50%;
+	}
+
+	#logo_wrapper{
+		width: 40%;
+	}
+
+
+
+		#spiel {
+
+		height:30%;
+		margin-top: -15%;
+		overflow: visible;
+	}
+
+
+	#main_title_who {
+		color: #333;
+		margin-top: 5%;
+		display: inline-block;
+		font-size: 1em;
+		width: 40%;
+
+	}
+
+	#main_title_what {
+		color: #333;
+		margin-top: 5%;
+		display: none;
+		text-align: center;
+		margin-left: 5%;
+		float: left;
+		border : 5px solid rgba(0,0,0, 0.1);
+	}		
+
+	#main_title_who:hover {
+
+
+		cursor: pointer;
+	}
+
+	/*
+	Selected Class for Headings.
+	*/
+
+	.selected {
+		color:  #FFF;
+		background-color: #333; 
+		padding: 1%;
+	}
+
+
+/*SUB TITLE WHAT*/
+
+	#sub_title_what {
+		color: #333;
+		margin-top: 5%;
+		display: inline-block;
+		text-align: center;
+		margin-left: 5%;
+		font-size: 1em;
+		width: 40%;
+
+	}	
+
+	#sub_title_what:hover {
+
+		cursor: pointer;
+	}
+
+	#main_who {
+		margin: auto;
+		margin-top: 2%;
+		display: block;
+		width: 70%;
+		color: #333;
+		background: rgba(255,255,255,0.5);
+		padding: 2%;
+	}
+
+	#main_what {
+		margin: auto;
+		margin-top: 2%;
+		display: block;
+		width: 70%;
+		color: #333;
+		background: rgba(255,255,255,0.5);
+		padding: 2%;
+		display: none;
+	}
+
+
+	#main_what ul li {
+		margin: 0;
+		text-align: justify;
+	}
+
+	#main_what h4 {
+
+		text-align: left;
+	}
+
+	#main_what p {
+		margin: 0;
+		text-align: justify;
+	}	
+
+}
+
+
+
+
+
+
+
+
+
+/*TABLETSs*/
+
+@media only screen and (min-width: 768px){
+
+
+	#background {
+		height: 100%;
+	}
+
+
+	.peos a {
+	display: none; 
+	}
+
+	.peos_full a {
+		display: block;
+		color: #FFF;
+		text-decoration: none;
+		font-family: Helvetica;
+		font-size: 0.5em;
+	}
+
+	#logo_wrapper{
+
+	margin: auto;
+	margin-top: 15%;
+
+	width: 25%;
+	height: 40%;
+
+	}
+
+	#logo {
+
+	width: 100%;
+
+
+	}
+
+
+	#spiel {
+
+		height:30%;
+		margin-top: -12%;
+		overflow: visible;
+	}
+
+
+	#main_title_who {
+		color: #333;
+		margin-top: 5%;
+		display: inline-block;
+		font-size: 1em;
+		width: 20%;
+
+	}
+
+	#main_title_what {
+		color: #333;
+		margin-top: 5%;
+		display: none;
+		text-align: center;
+		margin-left: 5%;
+		float: left;
+		border : 5px solid rgba(0,0,0, 0.1);
+	}		
+
+	#main_title_who:hover {
+
+		color:  #EEE;
+		cursor: pointer;
+	}
+
+	/*
+	Selected Class for Headings.
+	*/
+
+	.selected {
+		color:  #EEE;
+		background-color: transparent;
+	}
+
+
+/*SUB TITLE WHAT*/
+
+	#sub_title_what {
+		color: #333;
+		margin-top: 5%;
+		display: inline-block;
+		text-align: center;
+		margin-left: 5%;
+		font-size: 1em;
+		width: 20%;
+	}	
+
+	#sub_title_what:hover {
+
+		color:  #EEE;
+		cursor: pointer;
+	}
+
+	#main_who {
+		margin: auto;
+		margin-top: 2%;
+		display: block;
+		width: 90%;
+		color: #333;
+		background: rgba(255,255,255,0.5);
+		padding: 2%;
+	}
+
+	#main_what {
+		margin: auto;
+		margin-top: 2%;
+		display: block;
+		width: 90%;
+		color: #333;
+		background: rgba(255,255,255,0.5);
+		padding: 2%;
+		display: none;
+	}
+
+
+	#main_what ul li {
+		margin: 0;
+		text-align: justify;
+	}
+
+	#main_what h4 {
+
+		text-align: left;
+	}
+
+	#main_what p {
+		margin: 0;
+		text-align: justify;
+	}	
+
+	#footer ul {
+	margin-top: -1%;
+}
+
+	#footer ul li {
+
+		width: 7%;
+
+		margin-right: 0;
+
+		text-align: center;
+	}
+
+	#footer {
+		background-color: transparent;
+	}
+
+	#email:before {
+    content: '\e602';
+    font-family: 'icomoon';
+    speak: none;
+    color: #FFF;
+
+}
+		
+
+}
+
+
+@media only screen and (min-width: 1024px) {
+
+	#logo_wrapper {
+		margin-top: 5%;
+		width: 24%;
+		margin-bottom: 5%;
+	}
+
+
+}
+
+
